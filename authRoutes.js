@@ -68,12 +68,7 @@ authRouter.post('/login', async(req, res)=>{
 })
     res.status(200).json({message: "Login Route"})
 })
-authRouter.get('/', verifyJWT (req, res)=>{
-    User.find((error, result)=>{
-        if(error){
-            res.status(404),json({})
-        
-})
+
 module.exports = authRouter
 
 //Import BCRYPT
